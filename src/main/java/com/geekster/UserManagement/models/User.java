@@ -21,7 +21,7 @@ public class User {
     @NotBlank
     private String userName;
     @JsonFormat(pattern = "yyyy-mm-dd")
-    private String dateOfBirth;
+    private LocalDate dateOfBirth;
     @Pattern(regexp = "[A-Za-z]+[0-9]+@[A-Za-z]+\\.[A-Za-z]+")
     private String email;
     @Size(max = 12, min = 10)
